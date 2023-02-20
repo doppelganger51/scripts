@@ -1,0 +1,34 @@
+{
+  "items": [
+    {
+      "name": "Lasagne",
+      "price": 26,
+      "preparation_time": 1
+    },
+    {
+      "name": "Pizza",
+      "price": 32,
+      "preparation_time": 0.5
+    },
+    {
+      "name": "Hot-dog",
+      "price": 24,
+      "preparation_time": 0.1
+    },
+    {
+      "name": "Burger",
+      "price": 40,
+      "preparation_time": 0.2
+    },
+    {
+      "name": "Spaghetti Carbonara",
+      "price": 35,
+      "preparation_time": 0.5
+    },
+    {
+      "name": "Tiramisu",
+      "price": 21,
+      "preparation_time": 0.15
+    }
+  ]
+}
