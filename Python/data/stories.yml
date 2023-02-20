@@ -1,0 +1,57 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: ask open
+  steps:
+  - intent: ask_open
+  - action: action_tell_if_open
+
+- story: ask menu
+  steps:
+  - intent: ask_menu
+  - action: action_list_menu_items
+
+- story: ask order pick up
+  steps:
+  - intent: start_order
+  - action: utter_ask_order
+  - intent: order
+  - action: action_show_order
+  - action: utter_ask_delivery
+  - intent: deny
+  - action: utter_goodbay_pickup
+
+- story: ask order delivery
+  steps:
+  - intent: start_order
+  - action: utter_ask_order
+  - intent: order
+  - action: action_show_order
+  - action: utter_ask_delivery
+  - intent: affirm
+  - action: utter_ask_address
+  - intent: address
+  - action: action_summarize_order_delivery
+
+#- story: order_story
+#  steps:
+#  - intent: start_order
+#  - action: restaurant_form
+#  - active_loop: restaurant_form
+#  - slot_was_set:
+#    - requested_slot: meals
+#  - slot_was_set:
+#    - meals: kaszka
+#  - slot_was_set:
+#    - requested_slot: null
+#  - active_loop: null
+#  - action: utter_greet
+#  - action: action_show_order

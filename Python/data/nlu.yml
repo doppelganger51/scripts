@@ -1,0 +1,142 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: start_pizza
+  examples: |
+    - i would like to order a pizza
+    - i want pizza now
+    - it would be so nice to have a pizza rigt now
+- lookup: day_of_week
+  examples: |
+    - monday
+    - tuesday
+    - wedensday
+    - thursday
+    - friday
+    - saturday
+    - sunday
+    - piateczek
+- intent: ask_open
+  examples: |
+    - is this restaurant open on [monday](day_of_week) [10](hour)
+    - is this restaurant open at [tuesday](day_of_week) [2](hour)
+    - is open at [wedensday](day_of_week) [23](hour)
+    - is open on [thursday](day_of_week) [18](hour)
+    - can I come at [friday](day_of_week) [15](hour)
+    - is it possible to eat on [saturday](day_of_week) [11](hour)
+    - is it possible to eat at [sunday](day_of_week) [20](hour)
+- intent: ask_menu
+  examples: |
+    - what is on the menu
+    - i wonder what is on the menu
+    - what can i order
+    - what food can i buy here
+    - what meals do you have
+    - what meals do you serve
+    - recommend me something to eat
+- intent: start_order
+  examples: |
+    - I would like to open an order
+    - I want to start ordering
+    - I need to eat someting
+    - Open an order for me
+    - Start an order for me
+    - start order for me
+    - open order for me
+- intent: order
+  examples: |
+    - Pizza, 2 Lasagne, Tiramisu
+    - Pizza
+    - Lasagne
+    - Tiramisu
+    - 3 Burgers, 2 Tiramisu, Pizza with no tomatoes
+    - Spaghetti Carbonara, 2 Lasagne, 3 Pizza
+    - Tiramisu with sugar, 2 Burgers with extra meat
+- intent: address
+  examples: |
+    - ul.Ulanow 23, Krakow
+    - ul.Laczna 12/3, Przytkowice
+    - ul.Pilotow 21/22, Krzeszowice
+    - ul.Porabane 111/31, Warszawa
