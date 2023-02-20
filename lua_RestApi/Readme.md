@@ -16,7 +16,7 @@ Delete category with id 2
 DELETE http://localhost:8080/category?id=2
 
 Create category with name "books"
-POST http://localhost:8080/category?name=cakes
+POST http://localhost:8080/category?name=books
 
 Update category with id 2 using name "magazines"
-POST http://localhost:8080/category?id=2&name=goodcakes
+POST http://localhost:8080/category?id=2&name=magazines
